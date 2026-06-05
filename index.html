@@ -6,33 +6,7 @@
     <meta name="description" content="Kalvin Eng — Researcher in software engineering, mining software repositories, and visual programming languages.">
     <title>Kalvin Eng</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="preload" href="fonts/inter-400.ttf" as="font" type="font/ttf" crossorigin>
     <style>
-/* ===== Local Fonts ===== */
-@font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-display: optional;
-    src: url('fonts/inter-400.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-display: optional;
-    src: url('fonts/inter-500.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-display: optional;
-    src: url('fonts/inter-600.ttf') format('truetype');
-}
-
 /* ===== Reset & Base ===== */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -47,7 +21,7 @@ html {
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.7;
     color: #2d3748;
     background-color: #fff;
@@ -98,7 +72,6 @@ a {
 
 a:hover {
     color: #1a4971;
-    text-decoration: underline;
 }
 
 ul {
@@ -153,8 +126,18 @@ li {
 /* ===== Social Icons ===== */
 .social-icons {
     display: flex;
+    align-items: center;
     gap: 1rem;
     margin-top: 0.5rem;
+}
+
+.social-icons .label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #4a5568;
+    width: 56px;
+    min-width: 56px;
+    text-align: right;
 }
 
 .social-icons a {
@@ -189,10 +172,6 @@ li {
     object-fit: contain;
     border: none;
     border-radius: 0;
-}
-
-.profile-info {
-    flex: 1;
 }
 
 /* ===== Research Interests ===== */
@@ -237,16 +216,6 @@ li {
 .pub-authors {
     font-size: 0.9rem;
     color: #4a5568;
-}
-
-/* ===== Footer ===== */
-.footer {
-    margin-top: 2rem;
-    padding-top: 1rem;
-    border-top: 1px solid #e2e8f0;
-    font-size: 0.8rem;
-    color: #a0aec0;
-    text-align: center;
 }
 
 /* ===== Responsive ===== */
@@ -325,10 +294,6 @@ li {
         margin: 1rem 0;
         padding: 0.6rem 0;
     }
-
-    .footer {
-        margin-top: 2rem;
-    }
 }
 
 /* ===== Print ===== */
@@ -367,6 +332,7 @@ li {
 
     <nav class="navigation">
         <div class="social-icons">
+            <span class="label">Contact:</span>
             <a href="mailto:kalvin.eng@ualberta.ca" title="Email" aria-label="Email">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
             </a>
@@ -433,8 +399,5 @@ li {
         <p>Full list on <a href="https://scholar.google.ca/citations?user=wFrVWLoAAAAJ">Google Scholar</a> / <a href="https://dblp.org/pid/235/7809.html">DBLP</a></p>
     </section>
     </main>
-
-    <footer class="footer">
-    </footer>
 </body>
 </html>
