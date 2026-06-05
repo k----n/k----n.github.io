@@ -5,7 +5,7 @@
   "description": "Academic personal website",
   "scripts": {
     "clean": "rimraf dist",
-    "copy:assets": "copyfiles -u 0 \"img/**/*\" \"fonts/**/*\" dist",
+    "copy:assets": "copyfiles -u 0 \"img/**/*\" \"fonts/**/*\" CNAME _headers dist",
     "minify:html": "html-minifier-terser --collapse-whitespace --remove-comments --minify-css true --minify-js true -o dist/index.html index.html",
     "build": "npm run clean && npm run copy:assets && npm run minify:html",
     "preview": "npx serve dist"
